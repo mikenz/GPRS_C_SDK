@@ -21,7 +21,7 @@ int          atoi(const char *s);
 #define  atof        CSDK_FUNC(atof)
 #define  itoa        CSDK_FUNC(itoa)
 #define  gcvt        CSDK_FUNC(gcvt)
-extern double strtod(const char *restrict s, char **restrict p);
+extern double strtod(const char *s, char **p);
 extern int strtol(const char *nptr, char **endptr, int base);
 extern unsigned int strtoul(const char *nptr, char **endptr, int base);
 
@@ -29,7 +29,7 @@ extern unsigned int strtoul(const char *nptr, char **endptr, int base);
 // unsigned long strtoul(const char *nptr, char **endptr, int base);
 
 //!!not the standard strtod, just impl with atof!!
-double        strtod(const char *restrict s, char **restrict p);
+double        strtod(const char *s, char **p);
 
 /* Standard random functions, work as the libc ones. */
 #define RAND_MAX        32767
